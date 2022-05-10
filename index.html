@@ -1,76 +1,36 @@
 <!DOCTYPE html>
 
 <head>
-	<meta name="viewport" content=
-		"width=device-width, initial-scale=1.0">
-
-	<!-- CSS file Included -->
-	<link rel="stylesheet"
-		type="text/css" href="tictactoe.css">
-
-	<!-- JavaScript file included -->
+	<meta name="viewport" content= "width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="tictactoe.css">
 	<script src="tictactoe.js"></script>
 </head>
 
 <body>
 	<div id="main">
 		<h1>TIC TAC TOE</h1>
-
-		<!-- Game Instructions -->
-		<p id="ins">Game starts by just tapping on a
-			box<br><br>First Player starts as
-			<b>Player X</b><br>And<br>Second
-			Player as <b>Player O</b>
-		</p>
-
-
-
+		<p id="ins">Player 1 as <b>Player X</b><br><br>Player 2 as <b>Player O</b></p>
 
 		<br><br>
-		<!-- 3*3 grid of Boxes -->
-		<input type="text" id="b1" onclick=
-			"square1(); win();" readonly>
-
-		<input type="text" id="b2" onclick=
-			"square2(); win();" readonly>
-
-		<input type="text" id="b3" onclick=
-			"square3(); win();" readonly>
+		<input type="text" id="b1" onclick="play(1); win();" readonly>
+		<input type="text" id="b2" onclick="play(2); win();" readonly>
+		<input type="text" id="b3" onclick="play(3); win();" readonly>
 		<br><br>
 
-		<input type="text" id="b4" onclick=
-			"square4(); win();" readonly>
-
-		<input type="text" id="b5" onclick=
-			"square5(); win();" readonly>
-
-		<input type="text" id="b6" onclick=
-			"square6(); win();" readonly>
+		<input type="text" id="b4" onclick="play(4); win();" readonly>
+		<input type="text" id="b5" onclick="play(5); win();" readonly>
+		<input type="text" id="b6" onclick="play(6); win();" readonly>
 		<br><br>
 
-		<input type="text" id="b7" onclick=
-			"square7(); win();" readonly>
+		<input type="text" id="b7" onclick="play(7); win();" readonly>
+		<input type="text" id="b8" onclick="play(8); win();" readonly>
+		<input type="text" id="b9" onclick="play(9); win();" readonly>
 
-		<input type="text" id="b8" onclick=
-			"square8();win();" readonly>
-
-		<input type="text" id="b9" onclick=
-			"square9();win();" readonly>
-
-		<!-- Grid end here -->
 		<br><br><br>
-		<!-- Button to reset game -->
-		<button id="but" onclick="reset()">
-			RESET
-		</button>
+		<button id="but" onclick="reset()">	RESET	</button>
 
 		<br><br>
-		<!-- Space to show player turn -->
 		<p id="print"></p>
-
-
-
-
 	</div>
 </body>
 
